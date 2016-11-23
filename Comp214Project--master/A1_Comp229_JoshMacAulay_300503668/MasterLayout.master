@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterLayout.master.cs" Inherits="MasterPageTest" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+</head>
+<body>
+    <form id="form1" runat="server" class="form1">
+        <div class="menuDiv">
+            <div class="navBar">
+            <ul class="navList">
+                <li><a runat="server" href="~/Homepage.aspx">Home</a></li>
+                <li><a runat="server" href="~/Recipes.aspx">Recipes</a></li>
+                <li><a runat="server" href="~/addRecipe.aspx">Add Recipe</a></li>
+                <li><a runat="server" href="~/searchRecipes.aspx">Search Recipe</a></li>
+            </ul>
+          </div>
+        </div>
+        <br />
+        <br />
+    <div class="bodyDiv">
+        <asp:ContentPlaceHolder id="mainPlaceHolder" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        
+        <footer class="footerDiv">
+            <a runat="server" href="~/Homepage.aspx">Home</a> |
+                <a runat="server" href="~/Recipes.aspx">Recipes</a> |
+                <a runat="server" href="~/addRecipe.aspx">Add Recipe</a> |
+                <a runat="server" href="~/searchRecipes.aspx">Search Recipe</a>
+            <br />
+            <h3>The Big Cookin Cookbook</h3>
+            <h6>&copy Josh MacAulay - 300503668</h6>
+        </footer>
+    </form>
+</body>
+</html>
